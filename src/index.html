@@ -11,20 +11,25 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&family=Roboto+Condensed:wght@300;400&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Space Website</title>
   </head>
   <body>
     <section class="header">
       <nav>
         <a href=""><img src="images/icons8-face-shield-64 (1).png" alt="" /></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="">Home</a></li>
           </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
       <div class="text-box">
         <h1>Explore Space</h1>
@@ -32,5 +37,14 @@
         <a href="" class="hero-btn">See More</a>
       </div>
     </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
