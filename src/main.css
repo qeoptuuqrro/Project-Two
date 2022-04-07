@@ -322,3 +322,10 @@ html{
   display: block;
 }
 
+footer{
+  text-align: center;
+}
+
+.footer1 p{
+  color: white;
+}
