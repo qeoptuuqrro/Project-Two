@@ -29,7 +29,7 @@ nav {
   padding: 8px 12px;
   position: relative;
 }
-.nav-links ul li {
+.nav-links ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 13px;
