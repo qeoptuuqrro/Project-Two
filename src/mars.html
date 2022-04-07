@@ -20,6 +20,19 @@
   </head>
 
   <body>
+    <section class="header">
+      <nav>
+        <a href=""><img src="images/icons8-face-shield-64 (1).png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="mars.html">mars</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Home</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
     <div class="mars2">
     <section class="space1">
       <h1>Explore The Mars</h1>
@@ -79,6 +92,14 @@
     </section>
     </div>
 
-
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
 
   </body>
