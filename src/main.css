@@ -207,3 +207,27 @@ h3 {
 .space1 p {
   color: white;
 }
+
+.wrapper{
+  margin: 0 auto;
+  width: 80%;
+}
+.wrapper h1{
+  color: red;
+}
+.videowrapper{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0px;
+}
+
+.videowrapper iframe{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+}
